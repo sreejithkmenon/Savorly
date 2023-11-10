@@ -40,15 +40,13 @@ To run the Savorly app:
 ## Author
 
 **Sreejith Menon (he/him/his)**
-Staff Software Engineer, iOS
-
-New York, NY 10027
-Mobile: +1 (201) 920-6089
-Email: sreejithakamenon@gmail.com
-LinkedIn: https://www.linkedin.com/in/sreejith-k-menon/
-Portfolio: https://sreejithkmenon.github.io
+- Location: New York, NY 10027
+- Role: Staff Software Engineer, iOS
+- Contact:
+- Email: sreejithakamenon@gmail.com
+- LinkedIn: https://www.linkedin.com/in/sreejith-k-menon/
+- Portfolio: https://sreejithkmenon.github.io
 
 ## Contribution
 
 For contributions or suggestions, please create a pull request or raise an issue in the repository.
-
