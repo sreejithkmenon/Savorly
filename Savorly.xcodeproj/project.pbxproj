@@ -34,7 +34,7 @@
 		B9F439022AFC3EC3006516E4 /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F439012AFC3EC3006516E4 /* MealDetail.swift */; };
 		B9F439042AFC426D006516E4 /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F439032AFC426D006516E4 /* MealDetailViewModel.swift */; };
 		B9F439062AFC4590006516E4 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F439052AFC4590006516E4 /* RecipeDetail.swift */; };
-		B9F4390C2AFC6302006516E4 /* MealDetailSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F4390B2AFC6302006516E4 /* MealDetailSubView.swift */; };
+		B9F4390C2AFC6302006516E4 /* MealDetailExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F4390B2AFC6302006516E4 /* MealDetailExtendedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +84,7 @@
 		B9F439012AFC3EC3006516E4 /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
 		B9F439032AFC426D006516E4 /* MealDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
 		B9F439052AFC4590006516E4 /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
-		B9F4390B2AFC6302006516E4 /* MealDetailSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailSubView.swift; sourceTree = "<group>"; };
+		B9F4390B2AFC6302006516E4 /* MealDetailExtendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailExtendedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 		B904435A2AFD0CC5007BCC92 /* MealDetail */ = {
 			isa = PBXGroup;
 			children = (
-				B9F4390B2AFC6302006516E4 /* MealDetailSubView.swift */,
+				B9F4390B2AFC6302006516E4 /* MealDetailExtendedView.swift */,
 				B9F438FA2AFC25E5006516E4 /* MealDetailView.swift */,
 				B90443A32AFDA191007BCC92 /* ErrorMealDetailView.swift */,
 			);
@@ -426,7 +426,7 @@
 				B9F438F32AFBBB75006516E4 /* MealListViewModel.swift in Sources */,
 				B9F438BD2AFBB893006516E4 /* ContentView.swift in Sources */,
 				B90443A02AFD8BAD007BCC92 /* AppConstants.swift in Sources */,
-				B9F4390C2AFC6302006516E4 /* MealDetailSubView.swift in Sources */,
+				B9F4390C2AFC6302006516E4 /* MealDetailExtendedView.swift in Sources */,
 				B9F439022AFC3EC3006516E4 /* MealDetail.swift in Sources */,
 				B9F438FD2AFC2615006516E4 /* MealListRow.swift in Sources */,
 				B904439A2AFD7566007BCC92 /* Ingredients.swift in Sources */,

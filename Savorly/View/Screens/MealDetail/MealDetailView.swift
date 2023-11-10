@@ -10,7 +10,7 @@ import SwiftUI
 struct MealDetailView: View {
     
     let meal: MealList
-    let imageSize: CGFloat = 300
+    let imageSize: CGFloat = AppConstants.UIUtils.mealDetailImageSize
     
     @StateObject var mealDetailViewModel = MealDetailViewModel()
     
@@ -25,7 +25,7 @@ struct MealDetailView: View {
             }
             
             else {
-                MealDetailSubView(meal: mealDetailViewModel.mealsDetail[0], ingredients: mealDetailViewModel.ingredients)
+                MealDetailExtendedView(meal: mealDetailViewModel.mealsDetail[0], ingredients: mealDetailViewModel.ingredients)
             }
         }
         .onAppear() {
@@ -39,35 +39,3 @@ struct MealDetailView_Previews: PreviewProvider {
         MealDetailView(meal: MealList.example1())
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//if mealDetailViewModel.isLoading {
-//    ProgressView()
-//}
-//
-//else if mealDetailViewModel.errorMessage != nil  {
-//    ErrorMealDetailView(mealDetailViewModel: mealDetailViewModel)
-//}
-//
-//else {
-//    MealDetailSubView(meal: mealDetailViewModel.mealsDetail[0], ingredients: mealDetailViewModel.ingredients)
-//}

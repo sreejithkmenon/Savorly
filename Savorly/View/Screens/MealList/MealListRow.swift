@@ -11,7 +11,7 @@ import CachedAsyncImage
 struct MealListRow: View {
     
     let meal: MealList
-    let imageSize: CGFloat = 100
+    let imageSize: CGFloat = AppConstants.UIUtils.mealListRowImageSize
     
     var body: some View {
         HStack {
@@ -36,16 +36,16 @@ struct MealListRow: View {
                             .frame(width: imageSize, height: imageSize)
                     }
                 }
-                .cornerRadius(20)
+                .cornerRadius(AppConstants.UIUtils.cachedAsyncImageMealListRowCornerRadius)
                 .overlay(
-                    RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.init(hex: AppConstants.UIUtils.imageBorderHexColor), lineWidth: 1)
+                    RoundedRectangle(cornerRadius: AppConstants.UIUtils.cachedAsyncImageMealListRowCornerRadius)
+                        .stroke(Color.init(hex: AppConstants.UIUtils.imageBorderHexColor), lineWidth: AppConstants.UIUtils.cachedAsyncImageMealListRowCornerLineWidth)
                 )
             } else {
                 Color.gray.frame(width: imageSize, height: imageSize)
             }
             
-            VStack(alignment: .leading, spacing: 15) {
+            VStack(alignment: .leading) {
                 Text(meal.strMeal)
                     .bold()
                     .font(.title3)

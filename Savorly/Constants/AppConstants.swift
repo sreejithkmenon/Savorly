@@ -29,5 +29,19 @@ struct AppConstants {
         static let instructionsMealTitle = "Instructions"
         static let ingredientsMealTitle = "Ingredients"
         static let ingredientsMealSeparatorSymbol = "~"
+        
+        static let mealListRowImageSize = 100.0
+        static let cachedAsyncImageMealListRowCornerRadius = 20.0
+        static let cachedAsyncImageMealListRowCornerLineWidth = 1.0
+        
+        static let mealDetailExtendedImageSize = 125.0
+        static let cachedAsyncImageMealDetailCornerRadius = 20.0
+        static let cachedAsyncImageMealDetailCornerLineWidth = 1.0
+        
+        static let instructionsMealDetailTextPaddingTop = 1.0
+        
+        static let ingredientsMealDetailTitlePaddingBottom = 1.0
+        
+        static let mealDetailImageSize = 300.0
     }
 }
