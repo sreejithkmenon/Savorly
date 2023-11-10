@@ -43,4 +43,10 @@ class DataMapper {
         return nonEmptyIngredients
     }
     
+    func sortMealListAlphabetically(mealList: [MealList]) -> [MealList] {
+        var meals = [MealList]()
+        meals = mealList.sorted { $0.strMeal < $1.strMeal }
+        return meals
+    }
+    
 }

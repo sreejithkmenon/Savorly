@@ -35,7 +35,7 @@ class MealListViewModel: ObservableObject {
                 case .failure(let error):
                     self.errorMessage = error.localizedDescription
                 case .success(let mealsList):
-                    self.mealsList = mealsList
+                    self.mealsList = DataMapper.shared.sortMealListAlphabetically(mealList: mealsList)
                 }
             }
         }
