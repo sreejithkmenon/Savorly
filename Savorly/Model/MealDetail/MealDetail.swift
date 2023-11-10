@@ -7,12 +7,26 @@
 
 import Foundation
 
+/// `MealDetail` struct models the details of a meal. It includes properties for meal identification,
+/// name, instructions, image URL, ingredients, and their corresponding measures.
+/// Conforms to `Codable` for JSON parsing and `Identifiable` for SwiftUI list views.
 struct MealDetail: Codable, Identifiable {
     
+    // MARK: - Properties
+    
+    /// Unique identifier for the meal.
     var id: String
+    
+    /// Name of the meal. Optional as not all meals might have a designated name.
     var strMeal: String?
+    
+    /// Cooking instructions for the meal. Optional as some meals might not come with instructions.
     var strInstructions: String?
+    
+    /// URL string for the meal's thumbnail image. Optional as some meals might not have an image.
     var strMealThumb: String?
+    
+    // Ingredients for the meal. Each is optional as a meal may not use all 20 ingredients.
     var strIngredient1: String?
     var strIngredient2: String?
     var strIngredient3: String?
@@ -33,6 +47,8 @@ struct MealDetail: Codable, Identifiable {
     var strIngredient18: String?
     var strIngredient19: String?
     var strIngredient20: String?
+    
+    // Measures for each ingredient. Each is optional as not all ingredients require explicit measures.
     var strMeasure1: String?
     var strMeasure2: String?
     var strMeasure3: String?
@@ -54,6 +70,11 @@ struct MealDetail: Codable, Identifiable {
     var strMeasure19: String?
     var strMeasure20: String?
     
+    // MARK: - Initializers
+    
+    /// Custom initializer from `Decoder`. It decodes each property from the decoder,
+    /// using `decodeIfPresent` for optional properties.
+    /// - Parameter decoder: The decoder to read data from.
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decode(String.self, forKey: .id)
@@ -102,6 +123,9 @@ struct MealDetail: Codable, Identifiable {
         strMeasure20 = try values.decodeIfPresent(String.self, forKey: .strMeasure20)
     }
     
+    /// Convenience initializer for creating `MealDetail` instances with provided parameters.
+    /// This can be used for testing or creating mock data.
+    // ... parameters listed here ...
     init(id: String, strMeal: String, strInstructions: String, strMealThumb: String, strIngredient1: String, strIngredient2: String, strIngredient3: String, strIngredient4: String, strIngredient5: String, strIngredient6: String, strIngredient7: String, strIngredient8: String, strIngredient9: String, strIngredient10: String, strIngredient11: String, strIngredient12: String, strIngredient13: String, strIngredient14: String, strIngredient15: String, strIngredient16: String, strIngredient17: String, strIngredient18: String, strIngredient19: String, strIngredient20: String, strMeasure1: String, strMeasure2: String, strMeasure3: String, strMeasure4: String, strMeasure5: String, strMeasure6: String, strMeasure7: String, strMeasure8: String, strMeasure9: String, strMeasure10: String, strMeasure11: String, strMeasure12: String, strMeasure13: String, strMeasure14: String, strMeasure15: String, strMeasure16: String, strMeasure17: String, strMeasure18: String, strMeasure19: String, strMeasure20: String) {
         
         self.id = id
@@ -150,6 +174,10 @@ struct MealDetail: Codable, Identifiable {
         self.strMeasure20 = strMeasure20
     }
     
+    // MARK: - CodingKeys
+    
+    /// Enum for coding keys used in serialization and deserialization.
+    /// Maps each property to a specific key in the JSON data.
     enum CodingKeys: String, CodingKey {
         case id = "idMeal"
         case strMeal
@@ -197,6 +225,10 @@ struct MealDetail: Codable, Identifiable {
         case strMeasure20
     }
     
+    // MARK: - Static Example Methods
+    
+    /// Provides a static example instance of `MealDetail`.
+    /// Useful for testing or previewing UI components.
     static func example1() -> MealDetail {
         return MealDetail(id: "1", strMeal: "Teriyaki Chicken Casserole", strInstructions: "Preheat oven to 35000b0 F. Spray a 9x13-inch baking pan with non-stick spray.nCombine soy sauce, 00bd cup water, brown sugar, ginger and garlic in a small saucepan and cover. Bring to a boil over medium heat. Remove lid and cook for one minute once boiling.\r\nMeanwhile, stir together the corn starch and 2 tablespoons of water in a separate dish until smooth. Once sauce is boiling, add mixture to the saucepan and stir to combine. Cook until the sauce starts to thicken then remove from heat.\r\nPlace the chicken breasts in the prepared pan. Pour one cup of the sauce over top of chicken. Place chicken in oven and bake 35 minutes or until cooked through. Remove from oven and shred chicken in the dish using two forks.\r\n*Meanwhile, steam or cook the vegetables according to package directions.\r\nAdd the cooked vegetables and rice to the casserole dish with the chicken. Add most of the remaining sauce, reserving a bit to drizzle over the top when serving. Gently toss everything together in the casserole dish until combined. Return to oven and cook 15 minutes. Remove from oven and let stand 5 minutes before serving. Drizzle each serving with remaining sauce. Enjoy!", strMealThumb: "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg", strIngredient1:"soy sauce", strIngredient2:"water", strIngredient3:"brown sugar", strIngredient4:"ground ginger", strIngredient5:"minced garlic", strIngredient6:"cornstarch", strIngredient7:"chicken breasts", strIngredient8:"stir-fry vegetables", strIngredient9:"brown rice", strIngredient10:"", strIngredient11:"", strIngredient12:"", strIngredient13:"", strIngredient14:"", strIngredient15:"", strIngredient16:"null", strIngredient17:"null", strIngredient18:"null", strIngredient19:"null", strIngredient20:"null", strMeasure1:"34 cup",strMeasure2:"1/2 cup", strMeasure3:"1/4 cup",strMeasure4:"1/2 teaspoon",strMeasure5:"12 teaspoon", strMeasure6:"4 Tablespoons",strMeasure7:"2", strMeasure8:"1 (12 oz.)", strMeasure9:"3 cups", strMeasure10:"", strMeasure11:"",strMeasure12:"",strMeasure13:"", strMeasure14:"", strMeasure15:"", strMeasure16:"null", strMeasure17:"null", strMeasure18:"null", strMeasure19:"null", strMeasure20:"null")
     }
@@ -214,3 +246,13 @@ struct MealDetail: Codable, Identifiable {
         return ingredients
     }
 }
+
+// MARK: - Assumptions and Notes
+/*
+ - The model assumes that the maximum number of ingredients and measures per meal is 20.
+ This might not be sufficient for complex meals or could be excessive for simpler ones.
+ - Optional properties indicate that not all meals will have complete data.
+ - The coding keys are assumed to match the JSON structure from an external API.
+ - The model lacks error handling for invalid data (e.g., non-URL strings for `strMealThumb`).
+ - The `Ingredients` struct or class used in `example3()` is not defined in this code snippet.
+ */
