@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B90443982AFD7512007BCC92 /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90443972AFD7512007BCC92 /* DataMapper.swift */; };
+		B90443982AFD7512007BCC92 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90443972AFD7512007BCC92 /* DataManager.swift */; };
 		B904439A2AFD7566007BCC92 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90443992AFD7566007BCC92 /* Ingredients.swift */; };
 		B90443A02AFD8BAD007BCC92 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B904439F2AFD8BAD007BCC92 /* AppConstants.swift */; };
 		B90443A22AFD9220007BCC92 /* ErrorMealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90443A12AFD9220007BCC92 /* ErrorMealListView.swift */; };
@@ -55,7 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B90443972AFD7512007BCC92 /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
+		B90443972AFD7512007BCC92 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B90443992AFD7566007BCC92 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		B904439F2AFD8BAD007BCC92 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		B90443A12AFD9220007BCC92 /* ErrorMealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMealListView.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		B90443962AFD73A1007BCC92 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B90443972AFD7512007BCC92 /* DataMapper.swift */,
+				B90443972AFD7512007BCC92 /* DataManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -421,7 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B90443982AFD7512007BCC92 /* DataMapper.swift in Sources */,
+				B90443982AFD7512007BCC92 /* DataManager.swift in Sources */,
 				B9F438E82AFBB92E006516E4 /* APIMockService.swift in Sources */,
 				B9F438F32AFBBB75006516E4 /* MealListViewModel.swift in Sources */,
 				B9F438BD2AFBB893006516E4 /* ContentView.swift in Sources */,

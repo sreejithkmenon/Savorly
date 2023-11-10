@@ -42,7 +42,7 @@ class MealDetailViewModel: ObservableObject {
                     self.errorMessage = error.localizedDescription
                 case .success(let mealsDetail):
                     self.mealsDetail = mealsDetail
-                    self.ingredients = DataMapper.shared.getIngredientsMeasureArr(meal: mealsDetail[0])
+                    self.ingredients = DataManager.shared.getIngredientsMeasureArr(meal: mealsDetail[0])
                 }
             }
         }

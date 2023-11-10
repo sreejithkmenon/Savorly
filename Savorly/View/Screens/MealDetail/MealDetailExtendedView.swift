@@ -51,15 +51,16 @@ struct MealDetailExtendedView: View {
                     }
                     
                     VStack {
-                        Text(meal.strMeal!)
-                            .bold()
-                            .font(.title2)
-                            .padding()
+                        
+                        if let title = meal.strMeal {
+                            Text(title)
+                                .bold()
+                                .font(.title2)
+                                .padding()
+                        }
                         
                         Spacer()
                     }
-                    
-                    
                     
                     Spacer()
                 }
@@ -68,7 +69,7 @@ struct MealDetailExtendedView: View {
                     .padding(.top)
                     .padding(.bottom)
                 
-                if meal.strInstructions != nil {
+                if let instructions = meal.strInstructions {
                     
                     HStack {
                         Text(AppConstants.UIUtils.instructionsMealTitle)
@@ -78,7 +79,7 @@ struct MealDetailExtendedView: View {
                         Spacer()
                     }
                     
-                    Text(meal.strInstructions!)
+                    Text(instructions)
                         .padding(.top, AppConstants.UIUtils.instructionsMealDetailTextPaddingTop)
                 }
                 

@@ -1,5 +1,5 @@
 //
-//  DataMapper.swift
+//  DataManager.swift
 //  Savorly
 //
 //  Created by Sreejith K Menon on 09/11/23.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-class DataMapper {
+class DataManager {
     
-    static var shared = DataMapper()
+    static var shared = DataManager()
     
     func getIngredientsMeasureArr(meal: MealDetail) -> [Ingredients] {
         var ingredients = [Ingredients]()
@@ -43,10 +43,15 @@ class DataMapper {
         return nonEmptyIngredients
     }
     
-    func sortMealListAlphabetically(mealList: [MealList]) -> [MealList] {
+    func manageMealListData(mealList: [MealList]) -> [MealList] {
         var meals = [MealList]()
+        
         meals = mealList.sorted { $0.strMeal < $1.strMeal }
-        return meals
+        
+        let nonEmptyMeals = meals.filter({
+            $0.strMeal != ""
+        })
+        
+        return nonEmptyMeals
     }
-    
 }
