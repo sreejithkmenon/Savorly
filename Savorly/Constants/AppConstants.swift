@@ -22,4 +22,12 @@ struct AppConstants {
         static let tryAgainMessage = "Try again"
     }
     
+    struct UIUtils {
+        static let noImageSymbol = "eye.slash.circle.fill"
+        static let imageBorderHexColor = "EEEEEE"
+        
+        static let instructionsMealTitle = "Instructions"
+        static let ingredientsMealTitle = "Ingredients"
+        static let ingredientsMealSeparatorSymbol = "~"
+    }
 }

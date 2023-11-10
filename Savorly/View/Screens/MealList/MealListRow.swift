@@ -26,7 +26,7 @@ struct MealListRow: View {
                         
                     } else if phase.error != nil {
                         
-                        Image(systemName: "eye.slash.circle.fill")
+                        Image(systemName: AppConstants.UIUtils.noImageSymbol)
                             .font(.largeTitle)
                             .frame(width: imageSize, height: imageSize)
                         
@@ -39,7 +39,7 @@ struct MealListRow: View {
                 .cornerRadius(20)
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.init(hex: "EEEEEE"), lineWidth: 1)
+                        .stroke(Color.init(hex: AppConstants.UIUtils.imageBorderHexColor), lineWidth: 1)
                 )
             } else {
                 Color.gray.frame(width: imageSize, height: imageSize)

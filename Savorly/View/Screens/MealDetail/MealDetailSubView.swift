@@ -32,7 +32,7 @@ struct MealDetailSubView: View {
                                 
                             } else if phase.error != nil {
                                 
-                                Image(systemName: "eye.slash.circle.fill")
+                                Image(systemName: AppConstants.UIUtils.noImageSymbol)
                                     .font(.largeTitle)
                                     .frame(width: imageSize, height: imageSize)
                                 
@@ -44,7 +44,7 @@ struct MealDetailSubView: View {
                         .cornerRadius(20)
                         .overlay(
                             RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.init(hex: "EEEEEE"), lineWidth: 1)
+                                .stroke(Color.init(hex: AppConstants.UIUtils.imageBorderHexColor), lineWidth: 1)
                         )
                     } else {
                         Color.gray.frame(width: imageSize, height: imageSize)
@@ -71,7 +71,7 @@ struct MealDetailSubView: View {
                 if meal.strInstructions != nil {
                     
                     HStack {
-                        Text("Instructions")
+                        Text(AppConstants.UIUtils.instructionsMealTitle)
                             .font(.title2)
                             .bold()
                         
@@ -90,7 +90,7 @@ struct MealDetailSubView: View {
                     
                     VStack(alignment: .leading) {
                         
-                        Text("Ingredients")
+                        Text(AppConstants.UIUtils.ingredientsMealTitle)
                             .font(.title2)
                             .bold()
                             .padding(.bottom, 1)
@@ -99,7 +99,7 @@ struct MealDetailSubView: View {
                             HStack {
                                 Text(item.ingredient)
                                 
-                                Text("~")
+                                Text(AppConstants.UIUtils.ingredientsMealSeparatorSymbol)
                                 
                                 Text(item.measure)
                             }
