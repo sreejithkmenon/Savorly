@@ -1,62 +1,54 @@
-# Savorly: A Recipe Browsing App
+# Savorly iOS App
 
 ## Overview
 
-Savorly is an iOS application developed for the Fetch iOS Coding Challenge. The app allows users to browse dessert recipes using the [TheMealDB API](https://themealdb.com/api.php). It features two main functionalities: listing meals in the Dessert category and displaying detailed information about each meal.
-
-## Features
-
-- **Meal List View:** Displays a list of dessert meals, fetched from [TheMealDB API](https://themealdb.com/api/json/v1/1/filter.php?c=Dessert), sorted alphabetically.
-- **Meal Detail View:** Presents detailed information about a selected meal, including the name, instructions, and ingredients/measurements. Details are fetched from [TheMealDB API](https://themealdb.com/api/json/v1/1/lookup.php?i=MEAL_ID).
+Savorly is an iOS application developed by Sreejith Menon as part of the Fetch iOS Coding Challenge. The app enables users to browse and view detailed information about various dessert recipes, leveraging the MealDB API for data.
 
 ## Installation
 
+To run the Savorly app:
+
 1. Clone the repository to your local machine.
 2. Open `Savorly.xcodeproj` in Xcode.
-3. Run the project using the latest version of Xcode.
+3. Ensure you are using the latest version of Xcode.
+4. Build and run the application on an iOS Simulator or a physical device.
+
+## Features
+
+- **Meal List**: Fetches and displays meals from the Dessert category via the MealDB API.
+- **Meal Details**: Presents detailed information including meal name, instructions, and ingredients.
+- **Data Filtering**: Filters out null or empty values from the API for better data quality.
+- **User-Friendly Design**: Incorporates basic UI/UX design principles for ease of use.
 
 ## Project Structure
 
-```
-Savorly
-├── Assets.xcassets
-│   ├── AppIcon.appiconset
-│   └── ...
-├── Constants
-│   └── AppConstants.swift
-├── Extension
-│   └── ColorExtension.swift
-├── Helper
-│   └── DataManager.swift
-├── Model
-│   ├── MealDetail
-│   └── MealList
-├── Networking
-│   ├── APIError.swift
-│   └── ...
-├── View
-│   └── Screens
-│       ├── MealDetail
-│       └── MealList
-└── ViewModel
-    ├── MealDetailViewModel.swift
-    └── MealListViewModel.swift
-```
+- **Assets**: App icons and color assets.
+- **Constants**: App-wide constants.
+- **Extension**: Swift extensions, like `ColorExtension`.
+- **Helper**: Helper classes, such as `DataManager`.
+- **Model**: Data models for meal details and lists.
+- **Networking**: Network operations and API calls.
+- **View**: SwiftUI views for the app's UI.
+- **ViewModel**: View models for UI-related data processing.
 
-## Technology Stack
+## Additional Notes
 
-- **SwiftUI:** Used for building the UI of the app.
-- **Swift:** Primary programming language.
-
-## Design Considerations
-
-- The app focuses on functionality and meeting the requirements of the coding challenge.
-- Basic UI/UX principles are followed to ensure the app is user-friendly.
+- Adheres to MVVM architecture.
+- Unit tests in `SavorlyTests`.
+- Developed and tested with the latest Xcode version.
 
 ## Author
 
-- Sreejith K Menon
+**Sreejith Menon (he/him/his)**
+Staff Software Engineer, iOS
 
-## Acknowledgements
+New York, NY 10027
+Mobile: +1 (201) 920-6089
+Email: sreejithakamenon@gmail.com
+LinkedIn: https://www.linkedin.com/in/sreejith-k-menon/
+Portfolio: https://sreejithkmenon.github.io
 
-Special thanks to Fetch for providing this exciting coding challenge and the opportunity to demonstrate my skills in iOS app development.
+## Contribution
+
+For contributions or suggestions, please create a pull request or raise an issue in the repository.
+
