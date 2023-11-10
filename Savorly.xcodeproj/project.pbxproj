@@ -13,7 +13,7 @@
 		B90443A22AFD9220007BCC92 /* ErrorMealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90443A12AFD9220007BCC92 /* ErrorMealListView.swift */; };
 		B90443A42AFDA191007BCC92 /* ErrorMealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90443A32AFDA191007BCC92 /* ErrorMealDetailView.swift */; };
 		B974E2532AFE53FE00E945F8 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = B974E2522AFE53FE00E945F8 /* CachedAsyncImage */; };
-		B974E2592AFEC1CA00E945F8 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = B974E2582AFEC1C900E945F8 /* Readme.md */; };
+		B974E2592AFEC1CA00E945F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B974E2582AFEC1C900E945F8 /* README.md */; };
 		B9F438BB2AFBB893006516E4 /* SavorlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F438BA2AFBB893006516E4 /* SavorlyApp.swift */; };
 		B9F438BD2AFBB893006516E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F438BC2AFBB893006516E4 /* ContentView.swift */; };
 		B9F438BF2AFBB895006516E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F438BE2AFBB895006516E4 /* Assets.xcassets */; };
@@ -61,7 +61,7 @@
 		B904439F2AFD8BAD007BCC92 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		B90443A12AFD9220007BCC92 /* ErrorMealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMealListView.swift; sourceTree = "<group>"; };
 		B90443A32AFDA191007BCC92 /* ErrorMealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMealDetailView.swift; sourceTree = "<group>"; };
-		B974E2582AFEC1C900E945F8 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		B974E2582AFEC1C900E945F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B9F438B72AFBB893006516E4 /* Savorly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savorly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F438BA2AFBB893006516E4 /* SavorlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavorlyApp.swift; sourceTree = "<group>"; };
 		B9F438BC2AFBB893006516E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		B9F438AE2AFBB893006516E4 = {
 			isa = PBXGroup;
 			children = (
-				B974E2582AFEC1C900E945F8 /* Readme.md */,
+				B974E2582AFEC1C900E945F8 /* README.md */,
 				B9F438B92AFBB893006516E4 /* Savorly */,
 				B9F438CA2AFBB895006516E4 /* SavorlyTests */,
 				B9F438D42AFBB895006516E4 /* SavorlyUITests */,
@@ -400,7 +400,7 @@
 			files = (
 				B9F438C22AFBB895006516E4 /* Preview Assets.xcassets in Resources */,
 				B9F438BF2AFBB895006516E4 /* Assets.xcassets in Resources */,
-				B974E2592AFEC1CA00E945F8 /* Readme.md in Resources */,
+				B974E2592AFEC1CA00E945F8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
