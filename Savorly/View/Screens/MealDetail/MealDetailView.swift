@@ -34,11 +34,11 @@ struct MealDetailView: View {
     }
 }
 
-//struct MealDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MealDetailView(meal: MealList.example1())
-//    }
-//}
+struct MealDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        MealDetailView(meal: MealList.example1())
+    }
+}
 
 
 
