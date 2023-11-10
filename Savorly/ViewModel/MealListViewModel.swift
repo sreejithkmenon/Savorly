@@ -42,4 +42,16 @@ class MealListViewModel: ObservableObject {
         
     }
     
+    static func errorState() -> MealListViewModel {
+        let fetcher = MealListViewModel()
+        fetcher.errorMessage = APIError.url(URLError.init(.notConnectedToInternet)).localizedDescription
+        return fetcher
+    }
+    
+    static func successState() -> MealListViewModel {
+        let fetcher = MealListViewModel()
+        fetcher.mealsList = [MealList.example1(), MealList.example2()]
+        return fetcher
+    }
+    
 }
